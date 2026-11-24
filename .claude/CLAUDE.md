@@ -114,6 +114,18 @@ Prefer a quick first pass I can react to over a long upfront plan. For a change
 spanning many files (migration, handler, view, styles), use plan mode to lay out
 the steps first.
 
+## Capturing learnings
+When we find something worth keeping (a repeated correction, a gotcha, a new
+preference), suggest it in one line and say where it belongs. Wait for my OK
+before editing. Route it like this:
+- Applies to all my projects: this global file. Keep it generic (no hostnames
+  or project details), since it's public. It needs its own commit and push in
+  the `claude-config` repo.
+- Specific to one repo: that repo's `CLAUDE.md`.
+- Already covered in the other file: keep it in one place only, preferring
+  global.
+- Skip anything the code or git history already shows.
+
 ## Docs
 Only where a repo already has a `CLAUDE.md` or `docs/` system: keep it current
 as part of finishing a change that affects it. Don't create new docs files or
