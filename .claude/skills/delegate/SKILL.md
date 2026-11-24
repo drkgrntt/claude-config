@@ -13,6 +13,7 @@ it, do it directly.
 | Phase | Agent |
 |---|---|
 | Find out where things live, or what pattern exists | **Explore** (read-only) |
+| Find out what docs say (local `docs/` or external) | **scout** (custom, read-only) |
 | Turn an open-ended problem into a concrete spec | **planner** (custom), or built-in **Plan** |
 | Build something fully specified and self-contained | **general-purpose**, in a worktree |
 | Independent check of a finished diff | **reviewer** (custom, read-only) |
