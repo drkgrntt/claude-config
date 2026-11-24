@@ -2,7 +2,7 @@
 
 Personal [Claude Code](https://docs.claude.com/en/docs/claude-code) user-level
 config: working-style rules, settings, and reusable skills. Files mirror their
-path under `$HOME` and are symlinked in with GNU Stow.
+path under `$HOME`.
 
 ## Contents
 
@@ -15,14 +15,20 @@ Project-specific facts belong in each repo's own `CLAUDE.md`, not here.
 
 ## Install
 
+Link the files you want into `~/.claude`. `CLAUDE.md` is the one that matters:
+
 ```sh
-git clone https://github.com/<user>/claude-config.git ~/projects/claude-config
-cd ~/projects && stow --no-folding -t ~ claude-config
+git clone https://github.com/drkgrntt/claude-config.git ~/projects/claude-config
+ln -s ~/projects/claude-config/.claude/CLAUDE.md ~/.claude/CLAUDE.md
+ln -sf ~/projects/claude-config/.claude/statusline-command.sh ~/.claude/statusline-command.sh
 ```
 
-`--no-folding` is required: it symlinks individual files instead of the whole
-`~/.claude` directory, which also holds credentials, transcripts, and caches.
-Move any existing `~/.claude/settings.json` aside first, or Stow will refuse.
+Update later with `git pull`. Edits to `~/.claude/CLAUDE.md` go straight into
+the repo, since it's a symlink.
+
+**`settings.json` is a template, not a symlink.** Claude Code rewrites that
+file and adds machine-specific data, which would flow back into this public
+repo. Copy it by hand where useful. The statusline needs `oh-my-posh` and `jq`.
 
 ## Rules for this repo
 
