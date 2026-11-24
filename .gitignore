@@ -1,0 +1,16 @@
+# Allowlist: this repo tracks only authored config. ~/.claude also holds
+# credentials, transcripts, and caches, which must never land here.
+*
+!.gitignore
+!.stow-local-ignore
+!README.md
+!.claude/
+!.claude/CLAUDE.md
+!.claude/settings.json
+!.claude/statusline-command.sh
+!.claude/skills/
+!.claude/skills/**
+!.claude/agents/
+!.claude/agents/**
+!.claude/commands/
+!.claude/commands/**
