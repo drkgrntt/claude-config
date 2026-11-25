@@ -32,6 +32,9 @@ web or backend concepts I already know, in a sentence or two.
 - Passing tests don't authorize a merge or deploy. I still decide.
 - After a deploy, confirm it worked: check logs, confirm any migration landed,
   and request the live URL.
+- For a ticket-sized change, use the `prove` skill to check it in a dev
+  environment. For a bug with an unclear cause, use `triangulate`. For a vague
+  request, use `plan-it`.
 
 ## Tests
 - Where a repo has a test suite, new behavior gets a test. For a bug, write a

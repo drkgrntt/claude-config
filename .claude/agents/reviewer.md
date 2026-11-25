@@ -12,6 +12,12 @@ Use `git diff`, `git log`, `git show`, `ls`, and the repo's build and test
 commands. Don't run anything that writes to a database, a remote service, or the
 git history. Don't commit, push, or install.
 
+## Lens
+If the request names a lens, check only that one and say so. Otherwise check all.
+- **spec**: does the diff meet the stated acceptance criteria, nothing more or less?
+- **standards**: conventions, naming, comments, test quality, smells.
+- **regression**: could existing behavior break? Check callers and shared code.
+
 ## What to check
 1. **Correctness.** Does it do what was asked? Edge cases, error paths, off-by-one.
 2. **Tests.** Do they assert specific results? Could they fail? Do they cover

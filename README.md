@@ -10,6 +10,9 @@ path under `$HOME`.
 - `.claude/settings.json` - global defaults (model, theme, plugins, statusline)
 - `.claude/statusline-command.sh` - status line script
 - `.claude/skills/`, `agents/`, `commands/` - reusable workflows (as added)
+- `.claude/hooks/check-staged-secrets.sh` - blocks `git commit` when staged
+  files look like secrets. Link it to `~/.claude/hooks/` and add the
+  `PreToolUse` entry from `settings.json`.
 
 Project-specific facts belong in each repo's own `CLAUDE.md`, not here.
 

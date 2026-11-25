@@ -10,6 +10,8 @@ description: Use when writing, changing, or reviewing automated tests, or fixing
   mocks.
 - No test suite in this repo? Don't add infrastructure unprompted. Suggest it.
 - Bug fix: write the failing test first, then fix the bug.
+- New behavior with clear criteria: test first when practical. Red, minimal
+  code to green, then clean up. Don't write the whole suite up front.
 
 ## Write
 - One behavior per test. Name it for what it checks.
