@@ -16,3 +16,5 @@
 !.claude/commands/**
 !.claude/hooks/
 !.claude/hooks/**
+!.claude/output-styles/
+!.claude/output-styles/**
